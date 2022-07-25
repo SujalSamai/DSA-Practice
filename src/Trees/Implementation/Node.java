@@ -1,12 +1,14 @@
 package Trees.Implementation;
 
 public class Node {
-    int data;
-    Node left;
-    Node right;
+    public int data;
+    public int hdistance;
+    public Node left;
+    public Node right;
 
     public Node(int data) {
         this.data = data;
+        hdistance=Integer.MAX_VALUE;
     }
 
     public static void main(String[] args) {
