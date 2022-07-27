@@ -7,14 +7,14 @@ import java.util.Queue;
 
 public class MaxWidth {
     static class Pair{
-        TreeNode node;
+        TreeNode<Integer> node;
         int num;
-        Pair(TreeNode _node, int _num) {
+        Pair(TreeNode<Integer> _node, int _num) {
             num = _num;
             node = _node;
         }
     }
-    public static int widthOfBinaryTree(TreeNode root){
+    public static int widthOfBinaryTree(TreeNode<Integer> root){
         if (root==null){
             return 0;
         }
@@ -27,7 +27,7 @@ public class MaxWidth {
             int first=0,last=0;
             for (int i = 0; i < size; i++) {
                 int cur_id=q.peek().num-mmin;
-                TreeNode node=q.peek().node;
+                TreeNode<Integer> node=q.peek().node;
                 q.poll();
                 if (i==0) first=cur_id;
                 if (i==size-1) last=cur_id;

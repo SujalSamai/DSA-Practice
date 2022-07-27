@@ -5,11 +5,11 @@ import Trees.Implementation.TreeNode;
 public class SameTree {
     //Just do any Traversal technique for both the trees and check if they are similar
 
-    public boolean isSameTree(TreeNode p, TreeNode q) {
+    public boolean isSameTree(TreeNode<Integer> p, TreeNode<Integer> q) {
         return dfs(p, q);
     }
 
-    private boolean dfs(TreeNode p, TreeNode q) {
+    private boolean dfs(TreeNode<Integer> p, TreeNode<Integer> q) {
         if (p == null && q == null) {
             return true;
         }
@@ -27,7 +27,7 @@ public class SameTree {
     }
 
     //simple way
-    public boolean isSameTree2(TreeNode p, TreeNode q) {
+    public boolean isSameTree2(TreeNode<Integer> p, TreeNode<Integer> q) {
         if (p==null || q==null){
             return (p==q);
         }

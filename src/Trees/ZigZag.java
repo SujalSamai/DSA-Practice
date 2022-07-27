@@ -11,8 +11,8 @@ import java.util.Queue;
 public class ZigZag {
     //like level order traversal
     //flag=0 -> direction= l to r. flag=1 -> direction= r to l
-    public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
-        Queue<TreeNode> queue=new LinkedList<>();
+    public List<List<Integer>> zigzagLevelOrder(TreeNode<Integer> root) {
+        Queue<TreeNode<Integer>> queue=new LinkedList<>();
         List<List<Integer>> list= new ArrayList<>();
         if (root==null){
             return list;

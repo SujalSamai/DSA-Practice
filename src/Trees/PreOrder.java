@@ -1,32 +1,16 @@
 package Trees;
 
+import Trees.Implementation.TreeNode;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
 public class PreOrder {
-    static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode() {
-        }
-
-        TreeNode(int val) {
-            this.val = val;
-        }
-
-        TreeNode(int val, TreeNode left, TreeNode right) {
-            this.val = val;
-            this.left = left;
-            this.right = right;
-        }
-    }
 
     //Root left right - O(N)
     List<Integer> ls= new ArrayList<>();
-    public List<Integer> preorderTraversal(TreeNode root) {
+    public List<Integer> preorderTraversal(TreeNode<Integer> root) {
         if(root==null){
             return ls;
         }
@@ -36,8 +20,8 @@ public class PreOrder {
         return ls;
     }
 
-    public List<Integer> preorderTraversalIterative(TreeNode root){
-        Stack<TreeNode> stack=new Stack<>();
+    public List<Integer> preorderTraversalIterative(TreeNode<Integer> root){
+        Stack<TreeNode<Integer>> stack=new Stack<>();
         List<Integer> lst=new ArrayList<>();
         if(root==null){
             return lst;
@@ -60,7 +44,7 @@ public class PreOrder {
     }
 
     public static void main(String[] args) {
-        TreeNode root= new TreeNode(1);
+        TreeNode<Integer> root= new TreeNode(1);
         root.left=null;
         root.right=new TreeNode(2);
         root.right.left=new TreeNode(3);

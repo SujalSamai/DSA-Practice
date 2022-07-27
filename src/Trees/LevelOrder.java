@@ -7,8 +7,8 @@ import java.util.List;
 import java.util.Queue;
 
 public class LevelOrder {
-    public List<List<Integer>> levelOrder(TreeNode root) {
-        Queue<TreeNode> queue=new LinkedList<TreeNode>();
+    public List<List<Integer>> levelOrder(TreeNode<Integer> root) {
+        Queue<TreeNode<Integer>> queue=new LinkedList<TreeNode<Integer>>();
         List<List<Integer>> list=new LinkedList<List<Integer>>();
 
         if (root==null){

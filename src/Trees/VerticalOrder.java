@@ -6,7 +6,7 @@ import java.util.*;
 
 public class VerticalOrder {
     class Tuple{
-        TreeNode node;
+        TreeNode<Integer> node;
         int row,col;
         public Tuple(TreeNode node, int row, int col){
             this.node=node;
@@ -14,13 +14,13 @@ public class VerticalOrder {
             this.col=col;
         }
     }
-    public List<List<Integer>> verticalTraversal(TreeNode root){
+    public List<List<Integer>> verticalTraversal(TreeNode<Integer> root){
         TreeMap<Integer, TreeMap<Integer, PriorityQueue<Integer>>> map=new TreeMap<>();
         Queue<Tuple> q=new LinkedList<>();
         q.add(new Tuple(root,0,0));
         while (!q.isEmpty()){
             Tuple tuple=q.poll();
-            TreeNode node=tuple.node;
+            TreeNode<Integer> node=tuple.node;
             int x=tuple.row;
             int y= tuple.col;
 

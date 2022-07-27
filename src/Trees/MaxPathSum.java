@@ -9,7 +9,7 @@ public class MaxPathSum {
     //this way we get maximum sum a particular node can fetch
     //now find the maximum of all the node's result
     //Note -> if we encounter a negative sum on left or right, we return 0 instead of negative value
-    public int maxPathSum(TreeNode root) {
+    public int maxPathSum(TreeNode<Integer> root) {
         //taking an array, as we can't pass references in java
         int[] maxValue = new int[1];
         maxValue[0]=Integer.MIN_VALUE;
@@ -17,7 +17,7 @@ public class MaxPathSum {
         return maxValue[0];
     }
 
-    private int maxPathDown(TreeNode root, int[] maxValue) {
+    private int maxPathDown(TreeNode<Integer> root, int[] maxValue) {
         if (root==null) return 0;
         int left=Math.max(0, maxPathDown(root.left,maxValue));
         int right=Math.max(0, maxPathDown(root.right,maxValue));
