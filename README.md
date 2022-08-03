@@ -15,3 +15,4 @@
 - [Queue](https://github.com/SujalSamai/DSA-Practice/tree/main/src/Queue)
 - [Heaps](https://github.com/SujalSamai/DSA-Practice/tree/main/src/Heaps)
 - [Trees](https://github.com/SujalSamai/DSA-Practice/tree/main/src/Trees)
+- [Graphs](https://github.com/SujalSamai/DSA-Practice/tree/main/src/Graph)
