@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.PriorityQueue;
 
 //Spanning Tree-> If a tree having N nodes and N-1 edges can be drawn from a given graph, such that every node can be reached by any other node
-public class PrismAlgorithm {
+public class PrimsAlgorithm {
     /* Prim's Algorithm: Take the initial node and take the min edge it has and reach the next node from it
     Now take both the nodes and find the min edge from both the nodes and reach next node from it
     Repeat the steps until all nodes has been reached
