@@ -1,7 +1,7 @@
 # DSA-Practice
 ### This repository contains 
 - Implementations of various Data Structures and Algorithms.
-- Solution of various DSA questions from Leetcode, InterviewBit and GFG 
+- Solution of various DSA questions from [Leetcode](https://leetcode.com/sujalsamai/), [InterviewBit](https://www.interviewbit.com/profile/sujal-samai) and [GFG](https://auth.geeksforgeeks.org/user/sujalsamai123) 
 ## Topics
 - [Bitwise](https://github.com/SujalSamai/DSA-Practice/tree/main/src/Bitwise)
   - [Count Set Bits](https://github.com/SujalSamai/DSA-Practice/blob/main/src/Bitwise/TotalSetBits.java)
