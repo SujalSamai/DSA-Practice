@@ -23,4 +23,15 @@ public class BuyAndSell {
         }
         return max;
     }
+
+    public static int maxProfit2(int[] prices){
+        int maxProfit=0;
+        int mini=prices[0];
+        for (int i = 1; i < prices.length; i++) {
+            int cur=prices[i]-mini;
+            maxProfit=Math.max(maxProfit,cur);
+            mini=Math.min(mini,prices[i]);
+        }
+        return maxProfit;
+    }
 }
