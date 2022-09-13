@@ -1,6 +1,8 @@
 package DP;
 //https://leetcode.com/problems/longest-increasing-subsequence
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 
 public class LongestIncreasingSubseq {
     //Memoization - Time Complexity: O(N*N), Space Complexity: O(N*N) + O(N)
@@ -83,5 +85,35 @@ public class LongestIncreasingSubseq {
             next = cur.clone();
         }
         return cur[0];
+    }
+
+    //Binary Search
+    public int lengthOfLISBS(int[] nums) {
+        int[] temp = new int[nums.length];
+        int size = 0;
+        temp[0]=nums[0];
+        for (int i=1;i<nums.length;i++) {
+            if(nums[i]>temp[size]){
+                // arr[i] > the last element of temp array
+                temp[++size]=nums[i];
+            }
+            else{
+                // replacement step
+                int ind = lower_bound(temp,0,size,nums[i]);
+                temp[ind] = nums[i];
+            }
+        }
+        return size+1;
+    }
+    public int lower_bound(int[] nums, int i, int j,int x){
+        while (i < j) {
+            int m = i + (j-i) / 2;
+            if (nums[m] < x)
+                i = m + 1;
+            else
+                j = m;
+        }
+
+        return i;
     }
 }
