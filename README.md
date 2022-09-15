@@ -66,5 +66,7 @@
 - [DP](https://github.com/SujalSamai/DSA-Practice/tree/main/src/DP)
   - [0/1 Knapsack](https://github.com/SujalSamai/DSA-Practice/blob/main/src/DP/Knapsack01.java)
   - [Coin change](https://github.com/SujalSamai/DSA-Practice/blob/main/src/DP/CoinChange.java)
+  - [Longest Increasing Subsequence](https://github.com/SujalSamai/DSA-Practice/blob/main/src/DP/LongestIncreasingSubseq.java)
+  - [Matrix Chain Multiplication](https://github.com/SujalSamai/DSA-Practice/blob/main/src/DP/MatrixChainMulti.java)
 - [Trie](https://github.com/SujalSamai/DSA-Practice/tree/main/src/Trie)
   - [Implementation](https://github.com/SujalSamai/DSA-Practice/tree/main/src/Trie/Implementation)
