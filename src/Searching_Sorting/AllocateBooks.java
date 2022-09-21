@@ -5,13 +5,17 @@ public class AllocateBooks {
         if (B>A.length) return -1;
         int low=A[0];
         int high=0;
+        //defining initial range
         for (int i = 0; i < A.length; i++) {
+            //giving all books
             high=high+A[i];
+            //book having lowest pages
             low=Math.min(low, A[i]);
         }
         int res=-1;
         while (low<=high){
             int mid=(low+high)/2;
+            //if in range of A to mid
             if (isPossible(A,mid,B)){
                 res=mid;
                 high=mid-1;
