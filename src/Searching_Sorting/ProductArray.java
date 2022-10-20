@@ -1,29 +1,29 @@
 package Searching_Sorting;
-
+//https://leetcode.com/problems/product-of-array-except-self/
 import java.util.Arrays;
 
 public class ProductArray {
     public static void main(String[] args) {
         int[] nums={10,3,5,6,2};
-        System.out.println(Arrays.toString(productExceptSelf(nums, nums.length)));
+        System.out.println(Arrays.toString(productExceptSelf(nums)));
     }
-    public static long[] productExceptSelf(int[] nums,int n){
-        long[] P =new long[n];
-        long[] l =new long[n];
-        long[] r =new long[n];
-        l[0]=1;
-        r[n-1]=1;
-        // from left to right multiplication
-        for(int i=1;i<n;i++){
-            l[i]=nums[i-1]*l[i-1];
+
+    public static int[] productExceptSelf(int[] nums) {
+        int n= nums.length;
+        int[] res= new int[n];
+        res[0]=1;
+
+        for( int i=1; i<n; i++ ){
+            res[i]=res[i-1]*nums[i-1];
         }
-        // from right to left multiplication
-        for(int i=n-2;i>=0;i--){
-            r[i]=nums[i+1]*r[i+1];
+
+        int r=1;
+
+        for( int i=n-1; i>=0; i-- ){
+            res[i]=res[i]*r;
+            r=r*nums[i];
         }
-        for(int i=0;i<n;i++){
-            P[i]=l[i]*r[i];
-        }
-        return P;
+
+        return res;
     }
 }
