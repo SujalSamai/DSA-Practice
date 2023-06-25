@@ -1,4 +1,4 @@
-package DSA_251.Arrays;
+package DSA_251.Arrays.FirstMissing;
 
 public class FirstMissing {
     public static void main(String[] args) {

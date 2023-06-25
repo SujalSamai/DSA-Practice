@@ -1,4 +1,4 @@
-package DSA_251.Arrays;
+package DSA_251.Arrays.EquilibriumIndex;
 
 public class EquilIndex {
     public static void main(String[] args) {

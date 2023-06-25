@@ -1,4 +1,4 @@
-package DSA_251.Arrays;
+package DSA_251.Arrays.RotateByK;
 import java.util.Scanner;
 
 public class RotateByK {

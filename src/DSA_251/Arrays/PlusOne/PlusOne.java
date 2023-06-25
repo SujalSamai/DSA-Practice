@@ -1,4 +1,4 @@
-package DSA_251.Arrays;
+package DSA_251.Arrays.PlusOne;
 
 import java.util.Arrays;
 

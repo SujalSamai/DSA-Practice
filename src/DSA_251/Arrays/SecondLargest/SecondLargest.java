@@ -1,7 +1,5 @@
-package DSA_251.Arrays;
+package DSA_251.Arrays.SecondLargest;
 
-import java.util.HashMap;
-import java.util.HashSet;
 
 public class SecondLargest {
     //Time Complexity - O(n) Space- O(1)

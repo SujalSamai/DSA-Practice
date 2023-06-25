@@ -1,9 +1,9 @@
-package DSA_251.Arrays;
+package DSA_251.Arrays.NonDecreasing;
 
 public class NonDecreasing {
     //Time Complexity - O(n) Space- O(1)
     public static void main(String[] args) {
-        int[] arr={8,4,6};
+        int[] arr={-41, -40, -22, -14, -14, -1, 17, 59, -130, 92};
         System.out.println(isPossible(arr, arr.length));
     }
     public static boolean isPossible(int[] arr, int n) {
