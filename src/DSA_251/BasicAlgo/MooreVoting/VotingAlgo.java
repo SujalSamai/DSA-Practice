@@ -1,4 +1,4 @@
-package DSA_251.BasicAlgo;
+package DSA_251.BasicAlgo.MooreVoting;
 
 public class VotingAlgo {
     public static int findMajority(int[] arr, int n) {

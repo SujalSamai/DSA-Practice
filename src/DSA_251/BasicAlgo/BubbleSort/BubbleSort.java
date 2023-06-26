@@ -1,4 +1,4 @@
-package DSA_251.BasicAlgo;
+package DSA_251.BasicAlgo.BubbleSort;
 
 import java.util.Arrays;
 

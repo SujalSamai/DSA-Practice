@@ -1,4 +1,4 @@
-package DSA_251.BasicAlgo;
+package DSA_251.BasicAlgo.Kadane;
 
 public class KadaneAlgo {
     public static long maxSubarraySum(int[] arr, int n) {

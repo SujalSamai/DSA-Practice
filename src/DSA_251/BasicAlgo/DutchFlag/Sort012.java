@@ -1,4 +1,4 @@
-package DSA_251.BasicAlgo;
+package DSA_251.BasicAlgo.DutchFlag;
 
 public class Sort012 {
     public static void sort012(int[] arr) {

@@ -1,4 +1,4 @@
-package DSA_251.BasicAlgo;
+package DSA_251.BasicAlgo.SelectionSort;
 
 public class SelectionSort {
     public static void selectionSort(int[] arr, int n) {
