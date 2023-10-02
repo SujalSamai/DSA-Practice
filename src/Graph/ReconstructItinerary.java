@@ -1,11 +1,9 @@
 package Graph;
 //https://leetcode.com/problems/reconstruct-itinerary
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 public class ReconstructItinerary {
+
     LinkedList<String > result;
     HashMap<String, LinkedList<String>> map;
     public List<String> findItinerary(List<List<String>> tickets){
